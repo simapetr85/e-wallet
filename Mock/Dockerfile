@@ -9,8 +9,5 @@ WORKDIR /app
 # Copy project
 COPY app /app
 
-# Build
-RUN mvn install
-
 # Running
 RUN mvn spring-boot:run
