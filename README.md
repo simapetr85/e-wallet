@@ -15,8 +15,8 @@ docker-compose up
 
 > ## PostgreSQL 
 >
-> port: **12**
+> db name: **docker**
 >
-> username: **admin**
+> username: **docker**
 >
-> password: **admin** 
+> password: **docker** 
