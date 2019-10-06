@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  postgresql:
+    build: ./PostgreSQL
+    environment:
+      - "POSTGRES_USER=docker"
+      - "POSTGRES_PASSWORD=docker"
+      - "POSTGRES_DB=docker"
+  test-app:
+    build: ./Mock
+    ports:
+      - "8080:8080"
