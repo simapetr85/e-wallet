@@ -5,5 +5,8 @@ WORKDIR /app
 # Copy project
 COPY app /app
 
-# Running
+# Building
 RUN mvn package
+
+# When docker container start it will run this command 
+ENTRYPOINT ["java","-jar","target/SOME_JAR.jar"]
