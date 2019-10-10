@@ -1,15 +1,15 @@
 # Download Maven
-FROM maven:3.5-jdk-8-alpine
+FROM maven:3.6.2-jdk-11
 WORKDIR /app
 
 # Copy project
-COPY app /app
+COPY . /app
 
 # Building
 RUN mvn package
 
 # When docker container start it will run this command 
-ENTRYPOINT ["java","-jar","target/SOME_JAR.jar"]
+ENTRYPOINT ["java","-jar","target/gs-spring-boot-0.1.0.jar"]
 
 # Mužeš použít multistage docker build, kde si označíš container nejakym jmenem ( AS builder ) 
 # v tom containeru vybuildíš mvn appku a jenom to hotové jarko nakopčíš do toho druhého containeru.  (COPY --from=builder ...)
