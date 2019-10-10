@@ -45,6 +45,7 @@ services:
       - zookeper2
 
   # TODO
+  # #link: https://hub.docker.com/r/obsidiandynamics/kafdrop
   # kafka-manager:
   #   image: obsidiandynamics/kafdrop
   #   ports:
