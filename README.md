@@ -5,22 +5,21 @@ Download and install [Docker Desktop](https://docs.docker.com/docker-for-windows
 ## Usage
 
 docker-compose
-|Command|Description|
-| --------- | --------|
-| build     | Build or rebuild services |
-| down      | Stop and remove containers, networks, images, and volumes |
-| help      | Get help on a command |
-| images    | List images |
-| kill      | Kill containers |
-| logs      | View output from containers|
-| pause     | Pause services |
-| ps        | List containers |
-| rm        | Remove stopped containers |
-| start     | Start services |
-| stop      | Stop services |
-| up        | Create and start containers |
-
-
+```
+Command   Description
+build     Build or rebuild services
+down      Stop and remove containers, networks, images, and volumes
+help      Get help on a command
+images    List images
+kill      Kill containers
+logs      View output from containers
+pause     Pause services
+ps        List containers
+rm        Remove stopped containers
+start     Start services
+stop      Stop services
+up        Create and start containers
+```
 e.g. run workspace
 ```
 docker-compose up
